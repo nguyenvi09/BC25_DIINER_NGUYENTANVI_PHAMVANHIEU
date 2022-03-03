@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Dinner</title>
+    <title>Diner</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
 
     <!-- Bootstrap CSS -->
@@ -21,6 +38,79 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header__nav">
+          <div class="header__nav--left">
+            <a href="#">Diner</a>
+          </div>
+          <div class="header__nav--right">
+            <div class="header__search">
+              <input type="search" placeholder="Search here.." />
+              <i class="fas fa-search header__search--icon"></i>
+            </div>
+            <div class="header__display-mode">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="header__nav--button">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <div class="header__content">
+          <h1>The Only Thing We Love More Than Food Is You!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.Ea ipsum sed consequuntur illum facere.
+          </p>
+          <button class="header__button">
+            <span>read more</span>
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Overlay -->
+    <div class="overlay">
+      <button class="overlay-close">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <ul class="overlay-nav">
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#">about</a>
+        </li>
+        <li>
+          <a href="#">services</a>
+        </li>
+        <li>
+          <a href="#">blog</a>
+        </li>
+        <li>
+          <a href="#">404</a>
+        </li>
+        <li>
+          <a href="#">landing page</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+        <li>
+          <a href="#">shot codes</a>
+        </li>
+        <li>
+          <a href="#">email</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Overlay end-->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
