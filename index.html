@@ -402,25 +402,25 @@
           <div class="col-md-3 col-6 mt-md-0 mt-4 px-3">
           <div class="count__item">
             <i class="far fa-building"></i> <br>
-            <span>15,100</span>
+            <span class="counter">15,100</span>
             <p class="desc">Branches</p>
           </div></div>
           <div class="col-md-3 col-6 mt-md-0 mt-4 px-3">
           <div class="count__item">
             <i class="fas fa-utensils"></i> <br>
-            <span>19,256</span>
+            <span class="counter">19,256</span>
             <p class="desc">Food items</p>
           </div></div>
           <div class="col-md-3 col-6 mt-md-0 mt-4 px-3">
           <div class="count__item">
             <i class="fas fa-users"></i> <br>
-            <span>12,100</span>
+            <span class="counter">12,100</span>
             <p class="desc">Chefs</p>
           </div></div>
           <div class="col-md-3 col-6 mt-md-0 mt-4 px-3">
           <div class="count__item">
             <i class="far fa-smile"></i> <br>
-            <span>2,560</span>
+            <span class="counter">2,560</span>
             <p class="desc">Happy Customers</p>
           </div></div>
         </div>
@@ -432,10 +432,10 @@
     <section id="video" class="py-5">
       <div class="container py-lg-5">
         <div class="video__content">
-        <a href="" class="text-center">
+        <a href="#video-file" class="text-center video-link">
             <i class="fas fa-play fa-3x"></i>
         </a>
-        <div id="" class="mfp-hide">
+        <div id="video-file" class="mfp-hide">
           <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         </div>
@@ -638,6 +638,14 @@
         </div>
       </div>
     </footer>
+    <!-- Coppy right end -->
+
+    <!-- BackToTop -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fas fa-level-up-alt fa-2x"></i>
+    </a>
+    <!-- BackToTop end -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -655,13 +663,26 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Main script -->
     <script src="./js/script.js"></script>
 
+    <!-- Count up script -->
+    <script src="./libs/countup/jquery.countup.js"></script>
+    <script>
+      $('.counter').countUp();
+    </script>
+
     <!-- Magnific script -->
     <script src="./libs/magnific/jquery.magnific-popup.js"></script>
-
+    <script>
+      $(document).ready(function () {
+        $('.video-link').magnificPopup({
+          type: 'inline',
+        });
+      });
+    </script>
     <!-- Owl carousel 2 script -->
     <script src="./libs/owl/owl.carousel.min.js"></script>
     <script>
@@ -685,5 +706,8 @@
     });
     </script>
 
+    <!-- Back To Top -->
+    <script src="./libs/backToTop/main.js"></script>
+    <script src="./libs/backToTop/util.js"></script>
   </body>
 </html>
