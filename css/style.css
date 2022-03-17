@@ -52,6 +52,37 @@ a:hover {
   font-size: 1.8rem;
 }
 
+.change-icon {
+  display: none;
+}
+
+.light-mode {
+  background-color: white !important;
+}
+
+.bg-grey {
+  background-color: #f7f7f7 !important;
+}
+
+.color-black {
+  color: black !important;
+}
+
+.mode-border {
+  border-color: #eee !important;
+}
+
+.bg-icon {
+  background-color: #8273fc0d !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.color-text {
+  color: #161c2db3 !important;
+}
 /* Header */
 header {
   background-size: cover;
